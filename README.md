@@ -49,6 +49,7 @@
 
 
 # 3. Web dev. using github directly
+
  - You may navigate to the github repo. and make changes online directly. Click on edit button, make any neccessary changes that you need. Then Commit changes with your messages. 
 
  - Add useful commit messages about what has changed, so you could find them later if you changed your mind.
@@ -66,17 +67,24 @@
 
  - Use index.css to change font color and background color.
 
+ *Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.*
 ## 4.2 Change backgound picture
 
- - Update pictures in assesets folder. Consider to change favicon, planet.  Remember to use the same name and extension.
+ - Update pictures in assets folder. Consider to change favicon, planet.  Remember to use the same name and extension.
 
 ## 4.3 Change your description
 
  - Update index.html. Locate your description of any sub-field, update the sentences.
 
-## 4.4 Update your resume
+ *HTML, short for HyperText Markup Language, is the foundation of every webpage. It's a markup language used to structure and organize content on the web, defining elements like headings, paragraphs, images, and links.*
 
- - Update the pdf file in assests directory
+## 4.4 Update your resume or use other pdf file
+
+ - Update the pdf file in assets directory
+ - Update the pdf file name in the container class, index.html. 
+ - Use your best award or accomplished or an art piece for the pdf file.
+
+ *Simply replace the pdf file by uploading a new pdf file, search pdf in index.html and locate the file name that is needed to be replaced.*
 
 # 5. Publish your web
 
@@ -85,7 +93,11 @@
 2. Wait about 30s and refresh the page, you should see the public url now.
   
 
-# 6. Citation
+# 6. References
+
+- Properly cite any images used in your project.
+
+- Cite any other references you have used and update the references.
 
 Earth image:
 https://earth.google.com/web
@@ -98,5 +110,7 @@ Code reference:
 https://github.com/ndoherty-xyz/unemployables-portfolio-template
 
 https://roboticenergyllc.com
+
+Vincent Garreau  - vincentgarreau.com
 
 
