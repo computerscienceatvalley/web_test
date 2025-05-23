@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>GATORADE | portfolio</title>
+    <title>GATORADE | Fuel Your Performance</title>
     <link rel="icon" type="image" href="./assets/favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
@@ -14,6 +14,38 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
+    <style>
+        /* Gatorade glacier title effect */
+        h1 {
+            color: transparent;
+            background: linear-gradient(135deg, #00b4ff 0%, #ffffff 50%, #00b4ff 100%);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            text-shadow: none;
+            -webkit-text-fill-color: transparent;
+            text-decoration: none;
+            border-bottom: none;
+            animation: glacierShine 4s linear infinite;
+        }
+        
+        @keyframes glacierShine {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+        
+        /* Keep original layout colors */
+        body {
+            background-color: #1f242d;
+        }
+        #menu a:hover, .social:hover {
+            color: #0ef;
+        }
+        .btn_one {
+            background-color: #0ef;
+            color: #1f242d;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,112 +62,131 @@
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1700ms;"></div>
     </div>
     <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay: 1000ms;">ABOUT</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">PROFESSION</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay: 1000ms;">TERMS</a>
     <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay: 1000ms;">CONTACT</a>
-    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">PROJECTS</a>
+    <a id="projects" onclick="showprojects()" class="animated fadeIn" style="animation-delay: 1000ms;">MISSION</a>
     <div id="middle" class="animated slideInDown" style="animation-delay: 2000ms;">
         <h1>GATORADE</h1>
-        <h2>Electrolyte | Thirst-Quenching | Refreshing</h2>
+        <h2>Fuel Your Performance | Replenish What You Lose | Win From Within</h2>
         <div id="menu">
             <a onclick="showabout()">ABOUT</a>
-            <a onclick="showwork()">TERMS AND CONDITIONS</a>
+            <a onclick="showwork()">TERMS</a>
             <a onclick="showcontact()">CONTACT</a>
             <a onclick="showprojects()">MISSION</a>
         </div>
         <table>
             <tr>
                 <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
-                        href="https://www.science.org/"><i class="fas fa-atom"></i></a></td> 
+                        href="https://www.gatorade.com"><i class="fas fa-bolt"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
+                        href="https://twitter.com/Gatorade"><i class="fab fa-twitter"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+                        href="https://www.instagram.com/gatorade/"><i class="fab fa-instagram"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"
+                        href="https://www.facebook.com/Gatorade"><i class="fab fa-facebook"></i></a></td>
             </tr>
         </table>
     </div>
     <div id="projects_container" class="container">
         <div onclick="closeprojects()"><i class="fas fa-angle-right"></i></div>
-        <h1>Projects</h1>
+        <h1>Our Mission</h1>
         <section>
-            <h2>Work is my Hobby!</h2>
+            <h2>Win From Within</h2>
             <p>
-                Here are some of the projects I've worked on recently. Feel free to explore.
+                Gatorade was born in a lab in 1965, when researchers at the University of Florida were asked to determine why so many players were being affected by heat and heat-related illnesses. The researchers discovered that the players were losing fluids and electrolytes through sweat, but weren't replacing them. They also determined that carbohydrates helped delay fatigue during exercise.
             </p>
-            <ul>
-                <div class="project_card">
-                    <div class="project_info">
-                        <h3>Portfolio</h3>
-                        <p>The Open-Source code for the Personal Portfolio this website is coming from! A minimal and
-                            ambient portfolio template for Developers! ⚡</p>
-                        <button class="btn_one"><a
-                                href=".github.io"
-                                style="color: inherit; text-decoration: none"> View Project </a></button>
-                    </div>
+            <p>
+                The result of this research was Gatorade, the first sports drink. Today, Gatorade continues to fuel athletes at all levels with scientifically formulated products to help them perform at their best.
+            </p>
+            <div class="project_card">
+                <div class="project_info">
+                    <h3>Gatorade Sports Science Institute</h3>
+                    <p>Our commitment to research and innovation continues through the Gatorade Sports Science Institute (GSSI), which conducts research in exercise science, hydration and sports nutrition to help athletes optimize their health and performance.</p>
+                    <button class="btn_one"><a
+                            href="https://www.gssiweb.org"
+                            style="color: inherit; text-decoration: none">Learn More</a></button>
                 </div>
-                
-            </ul>
+            </div>
         </section>
     </div>
     <div id="work_container" class="container">
         <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>Profession</h1>
+        <h1>Terms & Conditions</h1>
         <section>
-            <h2>The job is not my job</h2>
+            <h2>Legal Information</h2>
             <p>
-                Welcome! I'm X_men professor, a passionate professional specializing in fundamental science discovery. 
+                By accessing and using this website, you accept and agree to be bound by the terms and provisions of this agreement. Additionally, when using this website's particular services, you shall be subject to any posted guidelines or rules applicable to such services.
             </p>
             <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;Web Designing</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Content Writing</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Graphic Designing</div>
+                <div><i class="fas fa-circle"></i>&nbsp;All content is property of Gatorade</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Not intended for medical use</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Consult physician before use if pregnant or nursing</div>
             </div>
-            <button class="btn_one"><a href="./assets/AP_CSP_Test_Breakdown.pdf" target="_blank"
-                    style="color: inherit; text-decoration: none">View
-                    Resume</a></button>
+            <button class="btn_one"><a href="https://www.gatorade.com/terms" target="_blank"
+                    style="color: inherit; text-decoration: none">Full Terms</a></button>
         </section>
     </div>
     <div id="about_container" class="container">
         <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-        <h1>About</h1>
+        <h1>About Gatorade</h1>
         <section>
-            <h2>Are you looking for me?</h2>
+            <h2>The Science of Sweat</h2>
             <p>
-                Ladies and gentlemen, please put your safety goggles on and firewall up—because entering the stage is the only human being who can debug Python code while balancing a chemical equation! Meet Professor G., a rare hybrid of a computer scientist and chemist—basically what happens when a compiler and a Bunsen burner fall in love.
-
-                They've got more RAM than your average brain and more volatile reactions than sodium in water. Their idea of a wild night? Refactoring code while simulating exothermic reactions. They speak fluent Java, C++, and periodic table. Legend says they once accidentally created a sentient AI by mixing caffeine with Red Bull and kernel-level access.
-
-                So whether it's electrons or electrons in circuits, this genius handles both with atomic precision. Be warned: they're 100% organic, 0% memory leak, and currently running on pure caffeine and curiosity!
+                Gatorade is more than just a thirst quencher. It's a scientifically formulated sports drink designed to help athletes hydrate better, perform stronger and recover faster. With the perfect balance of carbohydrates and electrolytes, Gatorade helps replace what athletes lose in sweat during intense training and competition.
             </p>
-
             <p>
-                Feel free to explore my portfolio on my website, where you can witness the diverse range of projects
-                I've had the privilege to work on. 
+                From professional athletes to weekend warriors, Gatorade has been fueling performance for over 50 years. Our products are developed based on extensive research into how the body works during exercise and what it needs to perform at its best.
             </p>
-
+            <div class="project_card">
+                <div class="project_info">
+                    <h3>Our Products</h3>
+                    <p>Gatorade offers a complete hydration system including Thirst Quencher, G2, Prime Energy Chews, Recover Protein Shakes, and specialized products like Gatorade Endurance for endurance athletes.</p>
+                </div>
+            </div>
         </section>
         <section>
-            <h2>skills</h2>
+            <h2>Key Features</h2>
             <p>
-                html, css, javascript, markdown, python, mysql, ....
+                <i class="fas fa-tint"></i> Electrolyte Replenishment | 
+                <i class="fas fa-bolt"></i> Energy Boosting Carbohydrates | 
+                <i class="fas fa-flask"></i> Scientifically Formulated | 
+                <i class="fas fa-trophy"></i> Trusted by Champions
             </p>
         </section>
     </div>
     <div id="contact_container" class="container">
         <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-        <h1>Contact</h1>
+        <h1>Contact Us</h1>
         <section>
-            <h2>No way to reach out to me</h2>
+            <h2>We'd Love to Hear From You</h2>
             <p>
-            <form action="https://formcarry.com/s/JKNu0aGkeQ" method="POST" class="formcarry-form">
-                <input name="name" type="text" placeholder="name" required />
-                <input name="email" type="email" placeholder="email" required /><br>
-                <textarea name="message" placeholder="your message" required rows="5"></textarea><br>
-                <button class="btn_one">send</button>
-            </form>
+                Have questions about our products? Interested in partnership opportunities? Want to share your Gatorade story? Reach out to us!
             </p>
-
-            <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
-                href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></td> 
+            <form action="https://formcarry.com/s/JKNu0aGkeQ" method="POST" class="formcarry-form">
+                <input name="name" type="text" placeholder="Your Name" required />
+                <input name="email" type="email" placeholder="Your Email" required /><br>
+                <textarea name="message" placeholder="Your Message" required rows="5"></textarea><br>
+                <button class="btn_one">Send Message</button>
+            </form>
+            <p style="margin-top: 20px;">
+                <strong>Customer Service:</strong> 1-800-884-2867<br>
+                <strong>Business Hours:</strong> Mon-Fri 9AM-5PM EST
+            </p>
+            <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
+                            href="https://www.instagram.com/gatorade/"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"
+                            href="https://twitter.com/Gatorade"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"
+                            href="https://www.facebook.com/Gatorade"><i class="fab fa-facebook"></i></a></td>
+                </tr>
+            </table>
         </section>
     </div>
     <div id="footer">
-        Unbelievable Particles Floating Around You<br> <a href="https://powerlock.github.io">ThePowerLock</a>
+        GATORADE® The Sports Fuel Company | © 2023 Stokely-Van Camp, Inc. All Rights Reserved.<br>
+        <a href="https://www.pepsico.com">Part of the PepsiCo Family</a>
     </div>
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
