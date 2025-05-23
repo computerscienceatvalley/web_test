@@ -45,6 +45,25 @@
             background-color: #0ef;
             color: #1f242d;
         }
+        
+        /* Footer styling */
+        #footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 15px 20px;
+            text-align: right;
+            background-color: rgba(31, 36, 45, 0.8);
+        }
+        #footer a {
+            color: #0ef;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        #footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
@@ -102,9 +121,6 @@
                 <div class="project_info">
                     <h3>Gatorade Sports Science Institute</h3>
                     <p>Our commitment to research and innovation continues through the Gatorade Sports Science Institute (GSSI), which conducts research in exercise science, hydration and sports nutrition to help athletes optimize their health and performance.</p>
-                    <button class="btn_one"><a
-                            href="https://www.gssiweb.org"
-                            style="color: inherit; text-decoration: none">Learn More</a></button>
                 </div>
             </div>
         </section>
@@ -122,8 +138,6 @@
                 <div><i class="fas fa-circle"></i>&nbsp;Not intended for medical use</div>
                 <div><i class="fas fa-circle"></i>&nbsp;Consult physician before use if pregnant or nursing</div>
             </div>
-            <button class="btn_one"><a href="https://www.gatorade.com/terms" target="_blank"
-                    style="color: inherit; text-decoration: none">Full Terms</a></button>
         </section>
     </div>
     <div id="about_container" class="container">
@@ -163,15 +177,11 @@
                 Have questions about our products? Interested in partnership opportunities? Want to share your Gatorade story? Reach out to us!
             </p>
             <form action="https://formcarry.com/s/JKNu0aGkeQ" method="POST" class="formcarry-form">
-                <input name="name" type="text" placeholder="Your Name" required />
-                <input name="email" type="email" placeholder="Your Email" required /><br>
-                <textarea name="message" placeholder="Your Message" required rows="5"></textarea><br>
-                <button class="btn_one">Send Message</button>
+                <input name="name" type="text" placeholder="Your Name" readonly />
+                <input name="email" type="email" placeholder="Your Email" readonly /><br>
+                <textarea name="message" placeholder="Your Message" readonly rows="5"></textarea><br>
+                <button class="btn_one" disabled>Send Message</button>
             </form>
-            <p style="margin-top: 20px;">
-                <strong>Customer Service:</strong> 1-800-884-2867<br>
-                <strong>Business Hours:</strong> Mon-Fri 9AM-5PM EST
-            </p>
             <table>
                 <tr>
                     <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"
@@ -185,8 +195,7 @@
         </section>
     </div>
     <div id="footer">
-        GATORADE® The Sports Fuel Company | © 2023 Stokely-Van Camp, Inc. All Rights Reserved.<br>
-        <a href="https://www.pepsico.com">Part of the PepsiCo Family</a>
+        <a href="https://docs.google.com/document/d/1UL2b_t127ZHHpzH6DXe4LxMfcpvEkF_QQQvCdwM7Ctk/edit?tab=t.0" target="_blank">Works Cited</a>
     </div>
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
